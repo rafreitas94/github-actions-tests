@@ -2,11 +2,11 @@ on:
   push:
   workflow_dispatch:
     inputs:
-      status_code:
+      response-status-code:
         description: 'Status Code from the response'     
         required: true
         default: 0
-      message:
+      reponse_message:
         description: 'Message from the response'
         required: true
         default: 'Deployment in progress...'
@@ -17,6 +17,6 @@ jobs:
     runs-on: unbuntu-latest
     steps:
     - name: print status
-      run: echo ${{ status_code }}
+      run: echo ${{ response-status-code }}
     - name: print name
-      run: echo ${{ message }}
+      run: echo ${{ reponse_message }}
