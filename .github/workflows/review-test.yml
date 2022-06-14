@@ -17,3 +17,6 @@ jobs:
     environment:
       name: reviewDeployment
       url: https://www.google.com.br
+    steps:
+    - name: print Hello World
+      run: echo "Hello World!"
