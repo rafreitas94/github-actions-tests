@@ -6,7 +6,7 @@ on:
         description: 'Status Code from the response'     
         required: true
         default: 0
-      reponse_message:
+      reponse-message:
         description: 'Message from the response'
         required: true
         default: 'Deployment in progress...'
@@ -17,6 +17,6 @@ jobs:
     runs-on: unbuntu-latest
     steps:
     - name: print status
-      run: echo ${{ response-status-code }}
+      run: echo ${{ github.event.inputs.response-status-code }}
     - name: print name
-      run: echo ${{ reponse_message }}
+      run: echo ${{ github.event.inputs.reponse-message }}
