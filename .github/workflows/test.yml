@@ -19,7 +19,7 @@ on:
 
 jobs:
   print-message:
-    if: github.repository == 'octo-org/octo-repo-prod'
+    if: ${{ response-status-code }} == 1
     name: Print message from the response
     runs-on: ubuntu-latest
     steps:
