@@ -20,7 +20,7 @@ on:
 jobs:
   print-message:
     name: Print message from the response
-    if: ${{ github.event.inputs.manual-trigger }} == 'false'
+    if: ${{ github.event.inputs.manual-trigger }} == 'true'
     runs-on: ubuntu-latest
     steps:
     - name: print status
