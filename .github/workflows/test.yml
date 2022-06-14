@@ -14,7 +14,7 @@ on:
 jobs:
   print-message:
     name: Print message from the response
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: print status
       run: echo ${{ github.event.inputs.response-status-code }}
