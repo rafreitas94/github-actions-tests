@@ -19,7 +19,7 @@ on:
 
 jobs:
   print-message:
-    if: 'false' == 'true'
+    if: github.repository == 'octo-org/octo-repo-prod'
     name: Print message from the response
     runs-on: ubuntu-latest
     steps:
