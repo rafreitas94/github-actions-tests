@@ -1,13 +1,11 @@
-on: push
+# on: push
 
-jobs:
-  print-message:
-    name: Print message from the response
-    runs-on: ubuntu-latest
-    steps:
-    - name: print status
-      run: echo ${{ github.event.inputs.response-status-code }}
-    - name: print name
-      run: echo ${{ github.event.inputs.reponse-message }}
-  
-
+# jobs:
+#   print-message:
+#     name: Print message from the response
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: print status
+#       run: echo ${{ github.event.inputs.response-status-code }}
+#     - name: print name
+#       run: echo ${{ github.event.inputs.reponse-message }}
