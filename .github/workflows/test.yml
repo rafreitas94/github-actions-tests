@@ -7,7 +7,7 @@ on:
         required: true
         type: choice
         options:
-        - true
+        - 'true'
       response-status-code:
         description: 'Status Code from the response'     
         required: true
@@ -20,7 +20,7 @@ on:
 jobs:
   print-message:
     name: Print message from the response
-    if: ${{ github.event.inputs.manual-trigger }} == false
+    if: ${{ github.event.inputs.manual-trigger }} == 'false'
     runs-on: ubuntu-latest
     steps:
     - name: print status
