@@ -38,7 +38,7 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         console.log("Esperando 30s");
         yield delay(30000);
-        core.info("Segue link do Github: https://github.com");
+        core.notice("Segue link do Github: https://github.com");
         yield delay(30000);
         console.log("Hello World!");
     });
@@ -48,3 +48,4 @@ function delay(ms) {
 }
 exports.delay = delay;
 main();
+//# sourceMappingURL=index.js.map
