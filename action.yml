@@ -1,0 +1,7 @@
+name: 'Node Test Hello World'
+description: 'Say "Hello World" to new pushes'
+author: 'Raphael'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

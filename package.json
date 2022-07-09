@@ -1,0 +1,29 @@
+{
+  "name": "github-actions-tests",
+  "version": "1.0.0",
+  "description": "github action tests",
+  "main": "/dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafreitas94/github-actions-tests.git"
+  },
+  "author": "Raphael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafreitas94/github-actions-tests/issues"
+  },
+  "homepage": "https://github.com/rafreitas94/github-actions-tests#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}

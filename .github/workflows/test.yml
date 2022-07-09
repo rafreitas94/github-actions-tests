@@ -1,31 +1,10 @@
-on:
-  push:
-  workflow_dispatch:
-    inputs:
-      manual-trigger:
-        description: 'Manual trigger'
-        required: true
-        type: choice
-        options:
-        - 'true'
-      response-status-code:
-        description: 'Status Code from the response'     
-        required: true
-        default: 0
-      reponse-message:
-        description: 'Message from the response'
-        required: true
-        default: 'Deployment in progress...'
+name: Test
+
+on: push
 
 jobs:
-  print-message:
-    if: ${{ github.event.inputs.response-status-code }} == 1
-    name: Print message from the response
+  test:
     runs-on: ubuntu-latest
     steps:
-    - name: print status
-      run: echo ${{ github.event.inputs.response-status-code }}
-    - name: print name
-      run: echo ${{ github.event.inputs.reponse-message }}
-    - name: print manual-trigger
-      run: echo ${{ github.event.inputs.manual-trigger }}
+      - uses: actions/checkout@v2
+      - uses: ./
