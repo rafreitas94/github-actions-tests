@@ -3,5 +3,5 @@ description: 'Say "Hello World" to new pushes'
 author: 'Raphael'
 
 runs:
-  using: 'node16'
+  using: 'node12'
   main: 'dist/index.js'
