@@ -48,4 +48,3 @@ function delay(ms) {
 }
 exports.delay = delay;
 main();
-//# sourceMappingURL=index.js.map
